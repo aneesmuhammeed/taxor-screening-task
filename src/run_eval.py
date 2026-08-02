@@ -48,40 +48,23 @@ def load_extractors() -> list:
     """Try to initialize each extractor. Skip any whose API key is missing."""
     extractors = []
 
-    try:
-        from extractors.claude_extractor import ClaudeExtractor
-        extractors.append(ClaudeExtractor())
-        logger.info("[OK] Claude extractor loaded")
-    except (ValueError, ImportError) as e:
-        logger.warning(f"[SKIP] Claude extractor skipped: {e}")
+
 
     try:
-        from extractors.gemini_extractor import GeminiExtractor
-        extractors.append(GeminiExtractor())
-        logger.info("[OK] Gemini extractor loaded")
+        from extractors.nemotron_extractor import NemotronExtractor
+        extractors.append(NemotronExtractor())
+        logger.info("[OK] Nemotron extractor loaded")
     except (ValueError, ImportError) as e:
-        logger.warning(f"[SKIP] Gemini extractor skipped: {e}")
+        logger.warning(f"[SKIP] Nemotron extractor skipped: {e}")
 
     try:
-        from extractors.openrouter_extractor import OpenRouterExtractor
-        extractors.append(OpenRouterExtractor())
-        logger.info("[OK] OpenRouter extractor loaded")
+        from extractors.minimax_extractor import MinimaxExtractor
+        extractors.append(MinimaxExtractor())
+        logger.info("[OK] Minimax extractor loaded")
     except (ValueError, ImportError) as e:
-        logger.warning(f"[SKIP] OpenRouter extractor skipped: {e}")
+        logger.warning(f"[SKIP] Minimax extractor skipped: {e}")
 
-    try:
-        from extractors.mistral_extractor import MistralExtractor
-        extractors.append(MistralExtractor())
-        logger.info("[OK] Mistral extractor loaded")
-    except (ValueError, ImportError) as e:
-        logger.warning(f"[SKIP] Mistral extractor skipped: {e}")
 
-    try:
-        from extractors.qwen_extractor import QwenExtractor
-        extractors.append(QwenExtractor())
-        logger.info("[OK] Qwen extractor loaded")
-    except (ValueError, ImportError) as e:
-        logger.warning(f"[SKIP] Qwen extractor skipped: {e}")
 
     return extractors
 
@@ -232,7 +215,10 @@ def _print_summary(df: pd.DataFrame, cost_data: dict, results_dir: Path):
     for model in df["model"].unique():
         model_df = df[df["model"] == model]
         # Exclude parse failures from accuracy calculation
-        valid = model_df[model_df.get("parse_failed", False) != True]
+        if "parse_failed" in model_df.columns:
+            valid = model_df[model_df["parse_failed"] != True]
+        else:
+            valid = model_df
 
         row = {"model": model, "bills_evaluated": len(valid)}
 
@@ -253,7 +239,10 @@ def _print_summary(df: pd.DataFrame, cost_data: dict, results_dir: Path):
 
         # Parse failure rate
         total = len(model_df)
-        failures = len(model_df[model_df.get("parse_failed", False) == True])
+        if "parse_failed" in model_df.columns:
+            failures = len(model_df[model_df["parse_failed"] == True])
+        else:
+            failures = 0
         row["parse_failures"] = f"{failures}/{total}"
 
         # Cost

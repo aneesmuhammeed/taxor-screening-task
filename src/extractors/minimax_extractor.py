@@ -1,4 +1,4 @@
-"""OpenRouter extractor using the OpenAI SDK."""
+"""Minimaxai extractor using the OpenAI SDK (NIM compatible)."""
 
 import os
 import logging
@@ -16,23 +16,26 @@ from schema import TokenUsage
 logger = logging.getLogger(__name__)
 
 
-class OpenRouterExtractor(BaseExtractor):
-    """Extract bill data using OpenRouter's OpenAI GPT-4o."""
+class MinimaxExtractor(BaseExtractor):
+    """Extract bill data using minimaxai/minimax-m3."""
 
-    MODEL_ID = "openai/gpt-4o"
+    MODEL_ID = "minimaxai/minimax-m3"
 
     def __init__(self):
-        api_key = os.environ.get("OPENROUTER_API_KEY")
+        api_key = os.environ.get("MINIMAX_API_KEY") or os.environ.get("NVIDIA_API_KEY")
         if not api_key:
-            raise ValueError("OPENROUTER_API_KEY not set in environment")
+            raise ValueError("MINIMAX_API_KEY or NVIDIA_API_KEY not set in environment")
+            
+        base_url = os.environ.get("MINIMAX_BASE_URL", "https://integrate.api.nvidia.com/v1")
+        
         self.client = openai.OpenAI(
             api_key=api_key,
-            base_url="https://openrouter.ai/api/v1"
+            base_url=base_url
         )
 
     @property
     def model_name(self) -> str:
-        return "openai/gpt-4o"
+        return self.MODEL_ID
 
     def _call_api(self, image_path: str) -> tuple[str, TokenUsage]:
         image_b64 = load_image_as_base64(image_path)
@@ -46,14 +49,14 @@ class OpenRouterExtractor(BaseExtractor):
                     "role": "user",
                     "content": [
                         {
+                            "type": "text",
+                            "text": EXTRACTION_PROMPT,
+                        },
+                        {
                             "type": "image_url",
                             "image_url": {
                                 "url": f"data:{media_type};base64,{image_b64}",
                             },
-                        },
-                        {
-                            "type": "text",
-                            "text": EXTRACTION_PROMPT,
                         },
                     ],
                 }
@@ -62,11 +65,11 @@ class OpenRouterExtractor(BaseExtractor):
 
         raw_text = response.choices[0].message.content
         usage = TokenUsage(
-            input_tokens=response.usage.prompt_tokens,
-            output_tokens=response.usage.completion_tokens,
+            input_tokens=response.usage.prompt_tokens if response.usage else 0,
+            output_tokens=response.usage.completion_tokens if response.usage else 0,
         )
 
         logger.info(
-            f"[OpenRouter] Tokens: {usage.input_tokens} in / {usage.output_tokens} out"
+            f"[Minimax] Tokens: {usage.input_tokens} in / {usage.output_tokens} out"
         )
         return raw_text, usage

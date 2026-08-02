@@ -92,7 +92,7 @@ class ZohoClient:
         """
         # Build the expense payload
         expense_data = {
-            "account_id": "",  # User needs to set this — first expense account
+            "account_id": os.environ.get("ZOHO_ACCOUNT_ID", ""),  # Pull from .env
             "date": extraction.get("date") or "2025-01-01",
             "amount": extraction.get("amount") or 0,
             "description": f"Bill from {extraction.get('vendor_name', 'Unknown')}",

@@ -11,36 +11,27 @@ are noted so these can be updated when pricing changes.
 # Last updated: 2025-01-15
 
 PRICING = {
-    "claude-sonnet-4-20250514": {
-        "input_per_1m": 3.00,    # $3.00 per 1M input tokens
-        "output_per_1m": 15.00,  # $15.00 per 1M output tokens
-        "source": "https://www.anthropic.com/pricing",
-        "date": "2025-01-15",
-    },
-    "gemini-3.6-flash": {
-        "input_per_1m": 0.075,   # $0.075 per 1M input tokens
-        "output_per_1m": 0.30,   # $0.30 per 1M output tokens
-        "source": "https://ai.google.dev/pricing",
-        "date": "2025-01-15",
-    },
-    "openai/gpt-4o": {
-        "input_per_1m": 2.50,    # $2.50 per 1M input tokens
-        "output_per_1m": 10.00,  # $10.00 per 1M output tokens
-        "source": "https://openrouter.ai/models/openai/gpt-4o",
-        "date": "2025-01-15",
-    },
+
     "pixtral-12b-2409": {
         "input_per_1m": 0.15,    # $0.15 per 1M input tokens
         "output_per_1m": 0.15,   # $0.15 per 1M output tokens
         "source": "https://mistral.ai/technology/#pricing",
         "date": "2025-01-15",
     },
-    "qwen/qwen-2-vl-7b-instruct:free": {
-        "input_per_1m": 0.00,    # 100% Free via OpenRouter
-        "output_per_1m": 0.00,   # 100% Free via OpenRouter
-        "source": "https://openrouter.ai/models/qwen/qwen-2-vl-7b-instruct:free",
+
+    "nvidia/nemotron-ocr-v2": {
+        "input_per_1m": 0.00,    # Free NIM Endpoint
+        "output_per_1m": 0.00,   
+        "source": "https://build.nvidia.com",
         "date": "2025-01-15",
     },
+    "minimaxai/minimax-m3": {
+        "input_per_1m": 0.00,    # Free NIM Endpoint
+        "output_per_1m": 0.00,   
+        "source": "https://build.nvidia.com",
+        "date": "2025-01-15",
+    },
+
 }
 
 
