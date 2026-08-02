@@ -1,3 +1,4 @@
 model,bills_evaluated,vendor_name_correct,invoice_number_correct,date_correct,amount_correct,currency_correct,gst_presence_correct,gst_gstin_correct,parse_failures,avg_cost_per_bill,cost_per_100_bills
+gemini-3.6-flash,0,N/A,N/A,N/A,N/A,N/A,N/A,N/A,10/10,$0.000000,$0.0000
 nvidia/nemotron-ocr-v2,10,100.0%,100.0%,55.6%,100.0%,100.0%,100.0%,100.0%,0/10,$0.000000,$0.0000
 minimaxai/minimax-m3,10,100.0%,100.0%,88.9%,100.0%,100.0%,100.0%,100.0%,0/10,$0.000000,$0.0000
