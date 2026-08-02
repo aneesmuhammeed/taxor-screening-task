@@ -1,5 +1,7 @@
 # Automated Multimodal Bill Extraction & ERP Integration
 
+**🌐 Live Demo / Hosted Frontend:** [https://taxor-screening-task-qrka3zwpw3remjxqujdjrp.streamlit.app/](https://taxor-screening-task-qrka3zwpw3remjxqujdjrp.streamlit.app/)
+
 ## 📌 Executive Summary
 This project delivers a **production-ready, end-to-end autonomous pipeline** for extracting structured financial data from messy, handwritten, and digital Indian bills/receipts. Instead of relying on expensive proprietary monolithic models, this solution utilizes highly optimized, cost-efficient Vision-Language Models (VLMs) via the **NVIDIA NIM infrastructure**, achieving **100% accuracy on critical financial fields at zero API cost**.
 
