@@ -31,22 +31,28 @@ def get_extractors():
     errors = []
 
     try:
-        from extractors.claude_extractor import ClaudeExtractor
-        extractors.append(ClaudeExtractor())
-    except (ValueError, ImportError) as e:
-        errors.append(f"Claude: {e}")
-
-    try:
         from extractors.gemini_extractor import GeminiExtractor
         extractors.append(GeminiExtractor())
     except (ValueError, ImportError) as e:
         errors.append(f"Gemini: {e}")
 
     try:
-        from extractors.openai_extractor import OpenAIExtractor
-        extractors.append(OpenAIExtractor())
+        from extractors.minimax_extractor import MinimaxExtractor
+        extractors.append(MinimaxExtractor())
     except (ValueError, ImportError) as e:
-        errors.append(f"OpenAI: {e}")
+        errors.append(f"Minimax: {e}")
+
+    try:
+        from extractors.mistral_extractor import MistralExtractor
+        extractors.append(MistralExtractor())
+    except (ValueError, ImportError) as e:
+        errors.append(f"Mistral: {e}")
+
+    try:
+        from extractors.nemotron_extractor import NemotronExtractor
+        extractors.append(NemotronExtractor())
+    except (ValueError, ImportError) as e:
+        errors.append(f"Nemotron: {e}")
 
     return extractors, errors
 
@@ -195,7 +201,8 @@ if uploaded_file and extractors:
 elif not extractors:
     st.warning(
         "No models loaded. Set API keys in your `.env` file:\n"
-        "- `ANTHROPIC_API_KEY`\n"
         "- `GOOGLE_API_KEY`\n"
-        "- `OPENAI_API_KEY`"
+        "- `MINIMAX_API_KEY`\n"
+        "- `MISTRAL_API_KEY`\n"
+        "- `NVIDIA_API_KEY`"
     )
