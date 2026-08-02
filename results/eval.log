@@ -1,22 +1,24 @@
-2026-08-02 23:59:00,700 [INFO] Loaded 10 ground truth entries
-2026-08-02 23:59:00,702 [INFO] Found 10 bill images in data\bills
-2026-08-02 23:59:09,041 [INFO] [OK] Gemini extractor loaded
-2026-08-02 23:59:11,028 [INFO] [OK] Nemotron extractor loaded
-2026-08-02 23:59:11,579 [INFO] [OK] Minimax extractor loaded
-2026-08-02 23:59:11,579 [INFO] Running 3 models × 10 bills
-2026-08-02 23:59:11,598 [INFO] AFC is enabled with max remote calls: 10.
-2026-08-02 23:59:58,544 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
-2026-08-02 23:59:58,690 [INFO] [Gemini] Tokens: 1409 in / 144 out
-2026-08-02 23:59:58,716 [INFO] [Nemotron] Calling OCR endpoint...
-2026-08-03 00:00:00,650 [INFO] [Nemotron] Formatting OCR output using meta/llama-3.1-8b-instruct...
-2026-08-03 00:00:03,380 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-08-03 00:00:03,408 [INFO] [Nemotron] Tokens: 2099 in / 121 out
-2026-08-03 00:01:06,976 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-08-03 00:01:06,983 [INFO] [Minimax] Tokens: 1016 in / 92 out
-2026-08-03 00:01:19,000 [INFO] AFC is enabled with max remote calls: 10.
-2026-08-03 00:01:19,514 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
-2026-08-03 00:01:19,520 [ERROR] [gemini-3.6-flash] API call failed for data\bills\bill_02.png: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 44.087312868s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '44s'}]}}
-2026-08-03 00:01:19,523 [INFO] [Nemotron] Calling OCR endpoint...
-2026-08-03 00:01:20,948 [INFO] [Nemotron] Formatting OCR output using meta/llama-3.1-8b-instruct...
-2026-08-03 00:01:22,211 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-08-03 00:01:22,219 [INFO] [Nemotron] Tokens: 2088 in / 97 out
+2026-08-03 00:10:55,713 [INFO] Loaded 10 ground truth entries
+2026-08-03 00:10:55,713 [INFO] Found 10 bill images in data\bills
+2026-08-03 00:11:06,760 [INFO] [OK] Gemini extractor loaded
+2026-08-03 00:11:09,199 [INFO] [OK] Nemotron extractor loaded
+2026-08-03 00:11:09,582 [INFO] [OK] Minimax extractor loaded
+2026-08-03 00:11:09,582 [INFO] Running 3 models × 10 bills
+2026-08-03 00:11:09,609 [INFO] AFC is enabled with max remote calls: 10.
+2026-08-03 00:11:10,159 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-08-03 00:11:10,162 [ERROR] [gemini-3.6-flash] API call failed for data\bills\bill_01.png: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 53.411422745s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}
+2026-08-03 00:11:10,166 [INFO] [Nemotron] Calling OCR endpoint...
+2026-08-03 00:11:11,601 [INFO] [Nemotron] Formatting OCR output using meta/llama-3.1-8b-instruct...
+2026-08-03 00:11:14,395 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-03 00:11:14,403 [INFO] [Nemotron] Tokens: 2099 in / 121 out
+2026-08-03 00:11:38,016 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-03 00:11:38,017 [INFO] [Minimax] Tokens: 1016 in / 92 out
+2026-08-03 00:11:50,032 [INFO] AFC is enabled with max remote calls: 10.
+2026-08-03 00:12:30,103 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-08-03 00:12:30,103 [ERROR] [gemini-3.6-flash] API call failed for data\bills\bill_02.png: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-08-03 00:12:30,113 [INFO] [Nemotron] Calling OCR endpoint...
+2026-08-03 00:12:31,521 [INFO] [Nemotron] Formatting OCR output using meta/llama-3.1-8b-instruct...
+2026-08-03 00:12:32,875 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-03 00:12:32,876 [INFO] [Nemotron] Tokens: 2088 in / 101 out
+2026-08-03 00:13:36,385 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-03 00:13:36,488 [INFO] [Minimax] Tokens: 1016 in / 91 out
