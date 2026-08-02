@@ -1,0 +1,112 @@
+[
+  {
+    "image_file": "bill_01.png",
+    "vendor_name": "Sri Lakshmi Stores",
+    "invoice_number": "SLS-2024-0451",
+    "date": "2024-11-15",
+    "date_raw": "15/11/2024",
+    "date_ambiguous": false,
+    "amount": 1250.0,
+    "currency": "INR",
+    "gst_details": "GSTIN: 29AABCS1429B1ZS, CGST 9%: Rs.56.25, SGST 9%: Rs.56.25"
+  },
+  {
+    "image_file": "bill_02.png",
+    "vendor_name": "Balaji Electronics",
+    "invoice_number": "BE-7823",
+    "date": "2024-10-03",
+    "date_raw": "03/10/2024",
+    "date_ambiguous": false,
+    "amount": 15499.0,
+    "currency": "INR",
+    "gst_details": "GSTIN: 27AABCB5678K1Z5, Total GST 18%: Rs.2789.82"
+  },
+  {
+    "image_file": "bill_03.png",
+    "vendor_name": "Annapurna Restaurant",
+    "invoice_number": null,
+    "date": "2024-12-25",
+    "date_raw": "25-12-24",
+    "date_ambiguous": false,
+    "amount": 480.0,
+    "currency": "INR",
+    "gst_details": null
+  },
+  {
+    "image_file": "bill_04.png",
+    "vendor_name": "Mehta Medical Hall",
+    "invoice_number": "MMH/1209",
+    "date": "2024-09-18",
+    "date_raw": "18/09/2024",
+    "date_ambiguous": false,
+    "amount": 3275.5,
+    "currency": "INR",
+    "gst_details": "GSTIN: 24AADCM7834N1ZK, GST 12%: Rs.393.06"
+  },
+  {
+    "image_file": "bill_05.png",
+    "vendor_name": "Sharma Cloth Emporium",
+    "invoice_number": "SCE-0098",
+    "date": "2024-08-07",
+    "date_raw": "7/8/2024",
+    "date_ambiguous": false,
+    "amount": 8900.0,
+    "currency": "INR",
+    "gst_details": "GSTIN: 09AALCS4321P1ZQ, CGST 2.5%: Rs.111.25, SGST 2.5%: Rs.111.25"
+  },
+  {
+    "image_file": "bill_06.png",
+    "vendor_name": "Gupta Hardware",
+    "invoice_number": "GH-445",
+    "date": "2024-07-22",
+    "date_raw": "22-07-24",
+    "date_ambiguous": false,
+    "amount": 2150.0,
+    "currency": "INR",
+    "gst_details": null
+  },
+  {
+    "image_file": "bill_07.png",
+    "vendor_name": "Ravi Xerox & Stationery",
+    "invoice_number": null,
+    "date": "2024-11-02",
+    "date_raw": "2/11/24",
+    "date_ambiguous": false,
+    "amount": 185.0,
+    "currency": "INR",
+    "gst_details": null
+  },
+  {
+    "image_file": "bill_08.png",
+    "vendor_name": "New Bombay Sweets",
+    "invoice_number": "NBS-3344",
+    "date": "2024-12-31",
+    "date_raw": "31/12/2024",
+    "date_ambiguous": false,
+    "amount": 750.0,
+    "currency": "INR",
+    "gst_details": "GSTIN: 19AABCN2233L1ZE, GST 5%: Rs.37.50"
+  },
+  {
+    "image_file": "bill_09.png",
+    "vendor_name": "Sai Auto Parts",
+    "invoice_number": "SA/2024/789",
+    "date": "2024-06-14",
+    "date_raw": "14-6-2024",
+    "date_ambiguous": false,
+    "amount": 4320.0,
+    "currency": "INR",
+    "gst_details": "GSTIN: 36AADCS9876Q1ZJ, Total Tax 28%: Rs.1209.60"
+  },
+  {
+    "image_file": "bill_10.png",
+    "vendor_name": "Patel Kirana Store",
+    "invoice_number": "PKS-112",
+    "date": null,
+    "date_raw": "1?/03/24",
+    "date_ambiguous": true,
+    "amount": 567.0,
+    "currency": "INR",
+    "gst_details": null
+  }
+]

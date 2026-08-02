@@ -1,0 +1,1052 @@
+[
+  {
+    "image_file": "bill_01.png",
+    "model": "claude-sonnet-4-20250514",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7pte7mW6atT9nZNdYz'}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.9166338443756104,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7pte7mW6atT9nZNdYz'}"
+  },
+  {
+    "image_file": "bill_01.png",
+    "model": "gemini-3.6-flash",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 34.962286702s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '34s'}]}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.6410884857177734,
+    "parse_success": false,
+    "parse_error": "API error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 34.962286702s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '34s'}]}}"
+  },
+  {
+    "image_file": "bill_01.png",
+    "model": "llama-3.3-70b-versatile",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 1.0683510303497314,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+  },
+  {
+    "image_file": "bill_01.png",
+    "model": "openai/gpt-4o",
+    "extraction": {
+      "vendor_name": "Sri Lakshmi Stores",
+      "invoice_number": "SLS-2024-0451",
+      "date": "2024-11-15",
+      "date_raw": "15/11/2024",
+      "amount": 1250.0,
+      "currency": "INR",
+      "gst_details": "GSTIN: 29AABCS1429B1ZS, CGST 9%: Rs.56.25, SGST 9%: Rs.56.25",
+      "raw_model_output": "{\n  \"vendor_name\": \"Sri Lakshmi Stores\",\n  \"invoice_number\": \"SLS-2024-0451\",\n  \"date\": \"2024-11-15\",\n  \"date_raw\": \"15/11/2024\",\n  \"amount\": 1250.00,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN: 29AABCS1429B1ZS, CGST 9%: Rs.56.25, SGST 9%: Rs.56.25\"\n}"
+    },
+    "token_usage": {
+      "input_tokens": 939,
+      "output_tokens": 116
+    },
+    "latency_seconds": 4.554766416549683,
+    "parse_success": true,
+    "parse_error": null
+  },
+  {
+    "image_file": "bill_01.png",
+    "model": "pixtral-12b-2409",
+    "extraction": {
+      "vendor_name": "Sri Lakshmi Stores",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "```json\n{\n  \"vendor_name\": \"Sri Lakshmi Stores\",\n  \"invoice_number\": \"SLS-2024-0451\",\n  \"date\": \"2024-11-15\",\n  \"date_raw\": \"15/11/2024\",\n  \"amount\": 1250.00,\n  \"currency\": \"INR\",\n  \"gst_details\": {\n    \"GSTIN\": \"29AABCS1429B1ZS\",\n    \"CGST\": {\n      \"amount\": 56.25,\n      \"rate\": 9\n    },\n    \"SGST\": {\n      \"amount\": 56.25,\n      \"rate\": 9\n    }\n  }\n}\n```"
+    },
+    "token_usage": {
+      "input_tokens": 991,
+      "output_tokens": 175
+    },
+    "latency_seconds": 2.565239429473877,
+    "parse_success": false,
+    "parse_error": "Pydantic validation: 1 validation error for BillExtraction\ngst_details\n  Input should be a valid string [type=string_type, input_value={'GSTIN': '29AABCS1429B1Z...unt': 56.25, 'rate': 9}}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_type"
+  },
+  {
+    "image_file": "bill_02.png",
+    "model": "claude-sonnet-4-20250514",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7qbiugM3UZt8pKhybp'}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.6378021240234375,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7qbiugM3UZt8pKhybp'}"
+  },
+  {
+    "image_file": "bill_02.png",
+    "model": "gemini-3.6-flash",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 13.538242557s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '13s'}]}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.5938887596130371,
+    "parse_success": false,
+    "parse_error": "API error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 13.538242557s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '13s'}]}}"
+  },
+  {
+    "image_file": "bill_02.png",
+    "model": "llama-3.3-70b-versatile",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.3765389919281006,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+  },
+  {
+    "image_file": "bill_02.png",
+    "model": "openai/gpt-4o",
+    "extraction": {
+      "vendor_name": "Balaji Electronics",
+      "invoice_number": "BE-7823",
+      "date": "2024-10-03",
+      "date_raw": "03/10/2024",
+      "amount": 15499.0,
+      "currency": "INR",
+      "gst_details": "GSTIN: 27AABCB5678K1Z5, Total GST 18%: Rs.2789.82",
+      "raw_model_output": "```json\n{\n  \"vendor_name\": \"Balaji Electronics\",\n  \"invoice_number\": \"BE-7823\",\n  \"date\": \"2024-10-03\",\n  \"date_raw\": \"03/10/2024\",\n  \"amount\": 15499.00,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN: 27AABCB5678K1Z5, Total GST 18%: Rs.2789.82\"\n}\n```"
+    },
+    "token_usage": {
+      "input_tokens": 939,
+      "output_tokens": 105
+    },
+    "latency_seconds": 3.134160280227661,
+    "parse_success": true,
+    "parse_error": null
+  },
+  {
+    "image_file": "bill_02.png",
+    "model": "pixtral-12b-2409",
+    "extraction": {
+      "vendor_name": "Balaji Electronics",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "```json\n{\n  \"vendor_name\": \"Balaji Electronics\",\n  \"invoice_number\": \"BE-7823\",\n  \"date\": \"2024-10-03\",\n  \"date_raw\": \"03/10/2024\",\n  \"amount\": 15499.0,\n  \"currency\": \"INR\",\n  \"gst_details\": {\n    \"GSTIN\": \"27AABCB5678K1Z5\",\n    \"tax_amount\": 2789.82,\n    \"tax_rate\": 18\n  }\n}\n```"
+    },
+    "token_usage": {
+      "input_tokens": 991,
+      "output_tokens": 137
+    },
+    "latency_seconds": 2.244737148284912,
+    "parse_success": false,
+    "parse_error": "Pydantic validation: 1 validation error for BillExtraction\ngst_details\n  Input should be a valid string [type=string_type, input_value={'GSTIN': '27AABCB5678K1Z...2789.82, 'tax_rate': 18}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_type"
+  },
+  {
+    "image_file": "bill_03.png",
+    "model": "claude-sonnet-4-20250514",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7rzm2Whp5u72suEwuC'}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.6462419033050537,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7rzm2Whp5u72suEwuC'}"
+  },
+  {
+    "image_file": "bill_03.png",
+    "model": "gemini-3.6-flash",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 54.721187062s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54s'}]}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.4167783260345459,
+    "parse_success": false,
+    "parse_error": "API error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 54.721187062s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54s'}]}}"
+  },
+  {
+    "image_file": "bill_03.png",
+    "model": "llama-3.3-70b-versatile",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.30434751510620117,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+  },
+  {
+    "image_file": "bill_03.png",
+    "model": "openai/gpt-4o",
+    "extraction": {
+      "vendor_name": "Annapurna Restaurant",
+      "invoice_number": null,
+      "date": "2024-12-25",
+      "date_raw": "25-12-24",
+      "amount": 480.0,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "{\n  \"vendor_name\": \"Annapurna Restaurant\",\n  \"invoice_number\": null,\n  \"date\": \"2024-12-25\",\n  \"date_raw\": \"25-12-24\",\n  \"amount\": 480.00,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}"
+    },
+    "token_usage": {
+      "input_tokens": 939,
+      "output_tokens": 69
+    },
+    "latency_seconds": 2.545647144317627,
+    "parse_success": true,
+    "parse_error": null
+  },
+  {
+    "image_file": "bill_03.png",
+    "model": "pixtral-12b-2409",
+    "extraction": {
+      "vendor_name": "Annapurna Restaurant",
+      "invoice_number": null,
+      "date": "2024-12-25",
+      "date_raw": "25-12-24",
+      "amount": 480.0,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "```json\n{\n  \"vendor_name\": \"Annapurna Restaurant\",\n  \"invoice_number\": null,\n  \"date\": \"2024-12-25\",\n  \"date_raw\": \"25-12-24\",\n  \"amount\": 480.00,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}\n```"
+    },
+    "token_usage": {
+      "input_tokens": 991,
+      "output_tokens": 84
+    },
+    "latency_seconds": 1.5140562057495117,
+    "parse_success": true,
+    "parse_error": null
+  },
+  {
+    "image_file": "bill_04.png",
+    "model": "claude-sonnet-4-20250514",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7tHGUn1E5g2N8x9Hq7'}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.6451022624969482,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7tHGUn1E5g2N8x9Hq7'}"
+  },
+  {
+    "image_file": "bill_04.png",
+    "model": "gemini-3.6-flash",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 37.159961817s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '37s'}]}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.5451145172119141,
+    "parse_success": false,
+    "parse_error": "API error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 37.159961817s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '37s'}]}}"
+  },
+  {
+    "image_file": "bill_04.png",
+    "model": "llama-3.3-70b-versatile",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.297741174697876,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+  },
+  {
+    "image_file": "bill_04.png",
+    "model": "openai/gpt-4o",
+    "extraction": {
+      "vendor_name": "Mehta Medical Hall",
+      "invoice_number": "MMH/1209",
+      "date": "2024-09-18",
+      "date_raw": "18/09/2024",
+      "amount": 3275.5,
+      "currency": "INR",
+      "gst_details": "GSTIN: 24AADCM7834N1ZK, GST 12%: Rs.393.06",
+      "raw_model_output": "{\n  \"vendor_name\": \"Mehta Medical Hall\",\n  \"invoice_number\": \"MMH/1209\",\n  \"date\": \"2024-09-18\",\n  \"date_raw\": \"18/09/2024\",\n  \"amount\": 3275.50,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN: 24AADCM7834N1ZK, GST 12%: Rs.393.06\"\n}"
+    },
+    "token_usage": {
+      "input_tokens": 1077,
+      "output_tokens": 99
+    },
+    "latency_seconds": 2.165822744369507,
+    "parse_success": true,
+    "parse_error": null
+  },
+  {
+    "image_file": "bill_04.png",
+    "model": "pixtral-12b-2409",
+    "extraction": {
+      "vendor_name": "Mehta Medical Hall",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "```json\n{\n  \"vendor_name\": \"Mehta Medical Hall\",\n  \"invoice_number\": \"MMH/1209\",\n  \"date\": \"2024-09-18\",\n  \"date_raw\": \"18/09/2024\",\n  \"amount\": 3275.50,\n  \"currency\": \"INR\",\n  \"gst_details\": {\n    \"GSTIN\": \"24AADCM7834N1ZK\",\n    \"tax_amount\": 393.06,\n    \"tax_rate\": 12\n  }\n}\n```"
+    },
+    "token_usage": {
+      "input_tokens": 991,
+      "output_tokens": 138
+    },
+    "latency_seconds": 2.0886998176574707,
+    "parse_success": false,
+    "parse_error": "Pydantic validation: 1 validation error for BillExtraction\ngst_details\n  Input should be a valid string [type=string_type, input_value={'GSTIN': '24AADCM7834N1Z... 393.06, 'tax_rate': 12}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_type"
+  },
+  {
+    "image_file": "bill_05.png",
+    "model": "claude-sonnet-4-20250514",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7unRCWpPLW3a3AHRX1'}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 3.2476446628570557,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7unRCWpPLW3a3AHRX1'}"
+  },
+  {
+    "image_file": "bill_05.png",
+    "model": "gemini-3.6-flash",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 16.864104946s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.5172843933105469,
+    "parse_success": false,
+    "parse_error": "API error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 16.864104946s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}"
+  },
+  {
+    "image_file": "bill_05.png",
+    "model": "llama-3.3-70b-versatile",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.3197014331817627,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+  },
+  {
+    "image_file": "bill_05.png",
+    "model": "openai/gpt-4o",
+    "extraction": {
+      "vendor_name": "Sharma Cloth Emporium",
+      "invoice_number": "SCE-0098",
+      "date": "2024-08-07",
+      "date_raw": "7/8/2024",
+      "amount": 8900.0,
+      "currency": "INR",
+      "gst_details": "GSTIN: 09AALCS4321P1ZQ, CGST 2.5%: Rs.111.25, SGST 2.5%: Rs.111.25",
+      "raw_model_output": "{\n  \"vendor_name\": \"Sharma Cloth Emporium\",\n  \"invoice_number\": \"SCE-0098\",\n  \"date\": \"2024-08-07\",\n  \"date_raw\": \"7/8/2024\",\n  \"amount\": 8900.0,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN: 09AALCS4321P1ZQ, CGST 2.5%: Rs.111.25, SGST 2.5%: Rs.111.25\"\n}"
+    },
+    "token_usage": {
+      "input_tokens": 1077,
+      "output_tokens": 118
+    },
+    "latency_seconds": 1.7642974853515625,
+    "parse_success": true,
+    "parse_error": null
+  },
+  {
+    "image_file": "bill_05.png",
+    "model": "pixtral-12b-2409",
+    "extraction": {
+      "vendor_name": "Sharma Cloth Emporium",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "```json\n{\n  \"vendor_name\": \"Sharma Cloth Emporium\",\n  \"invoice_number\": \"SCE-0098\",\n  \"date\": \"2024-07-08\",\n  \"date_raw\": \"7/8/2024\",\n  \"amount\": 8900.00,\n  \"currency\": \"INR\",\n  \"gst_details\": {\n    \"GSTIN\": \"09AALCS4321P1ZQ\",\n    \"CGST\": {\n      \"amount\": 111.25,\n      \"rate\": 2.5\n    },\n    \"SGST\": {\n      \"amount\": 111.25,\n      \"rate\": 2.5\n    }\n  }\n}\n```"
+    },
+    "token_usage": {
+      "input_tokens": 991,
+      "output_tokens": 175
+    },
+    "latency_seconds": 2.475273847579956,
+    "parse_success": false,
+    "parse_error": "Pydantic validation: 1 validation error for BillExtraction\ngst_details\n  Input should be a valid string [type=string_type, input_value={'GSTIN': '09AALCS4321P1Z...': 111.25, 'rate': 2.5}}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_type"
+  },
+  {
+    "image_file": "bill_06.png",
+    "model": "claude-sonnet-4-20250514",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7w6E3jKXVY22yWJFpo'}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.6397035121917725,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7w6E3jKXVY22yWJFpo'}"
+  },
+  {
+    "image_file": "bill_06.png",
+    "model": "gemini-3.6-flash",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 59.18786284s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '59s'}]}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.4713935852050781,
+    "parse_success": false,
+    "parse_error": "API error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 59.18786284s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '59s'}]}}"
+  },
+  {
+    "image_file": "bill_06.png",
+    "model": "llama-3.3-70b-versatile",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.2909243106842041,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+  },
+  {
+    "image_file": "bill_06.png",
+    "model": "openai/gpt-4o",
+    "extraction": {
+      "vendor_name": "Gupta Hardware",
+      "invoice_number": "GH-445",
+      "date": "2024-07-22",
+      "date_raw": "22-07-24",
+      "amount": 2150.0,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "{\n  \"vendor_name\": \"Gupta Hardware\",\n  \"invoice_number\": \"GH-445\",\n  \"date\": \"2024-07-22\",\n  \"date_raw\": \"22-07-24\",\n  \"amount\": 2150.0,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}"
+    },
+    "token_usage": {
+      "input_tokens": 939,
+      "output_tokens": 72
+    },
+    "latency_seconds": 4.008182525634766,
+    "parse_success": true,
+    "parse_error": null
+  },
+  {
+    "image_file": "bill_06.png",
+    "model": "pixtral-12b-2409",
+    "extraction": {
+      "vendor_name": "Gupta Hardware",
+      "invoice_number": "GH-445",
+      "date": "2024-07-22",
+      "date_raw": "22-07-24",
+      "amount": 2150.0,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "```json\n{\n  \"vendor_name\": \"Gupta Hardware\",\n  \"invoice_number\": \"GH-445\",\n  \"date\": \"2024-07-22\",\n  \"date_raw\": \"22-07-24\",\n  \"amount\": 2150.00,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}\n```"
+    },
+    "token_usage": {
+      "input_tokens": 991,
+      "output_tokens": 89
+    },
+    "latency_seconds": 1.459069013595581,
+    "parse_success": true,
+    "parse_error": null
+  },
+  {
+    "image_file": "bill_07.png",
+    "model": "claude-sonnet-4-20250514",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7xUifizvBaVhrHc1me'}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.648395299911499,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7xUifizvBaVhrHc1me'}"
+  },
+  {
+    "image_file": "bill_07.png",
+    "model": "gemini-3.6-flash",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 40.337597906s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.40082335472106934,
+    "parse_success": false,
+    "parse_error": "API error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 40.337597906s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}"
+  },
+  {
+    "image_file": "bill_07.png",
+    "model": "llama-3.3-70b-versatile",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.25655078887939453,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+  },
+  {
+    "image_file": "bill_07.png",
+    "model": "openai/gpt-4o",
+    "extraction": {
+      "vendor_name": "Ravi Xerox & Stationery",
+      "invoice_number": null,
+      "date": "2024-11-02",
+      "date_raw": "2/11/24",
+      "amount": 185.0,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "{\n  \"vendor_name\": \"Ravi Xerox & Stationery\",\n  \"invoice_number\": null,\n  \"date\": \"2024-11-02\",\n  \"date_raw\": \"2/11/24\",\n  \"amount\": 185.00,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}"
+    },
+    "token_usage": {
+      "input_tokens": 1077,
+      "output_tokens": 70
+    },
+    "latency_seconds": 2.531226396560669,
+    "parse_success": true,
+    "parse_error": null
+  },
+  {
+    "image_file": "bill_07.png",
+    "model": "pixtral-12b-2409",
+    "extraction": {
+      "vendor_name": "Ravi Xerox & Stationery",
+      "invoice_number": null,
+      "date": "2024-11-02",
+      "date_raw": "2/11/24",
+      "amount": 185.0,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "```json\n{\n  \"vendor_name\": \"Ravi Xerox & Stationery\",\n  \"invoice_number\": null,\n  \"date\": \"2024-11-02\",\n  \"date_raw\": \"2/11/24\",\n  \"amount\": 185.00,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}\n```"
+    },
+    "token_usage": {
+      "input_tokens": 991,
+      "output_tokens": 87
+    },
+    "latency_seconds": 2.205927610397339,
+    "parse_success": true,
+    "parse_error": null
+  },
+  {
+    "image_file": "bill_08.png",
+    "model": "claude-sonnet-4-20250514",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7ypEhsz2Lb2fFZAgzK'}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.8452870845794678,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd7ypEhsz2Lb2fFZAgzK'}"
+  },
+  {
+    "image_file": "bill_08.png",
+    "model": "gemini-3.6-flash",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 21.977333407s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '21s'}]}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.520209789276123,
+    "parse_success": false,
+    "parse_error": "API error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 21.977333407s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '21s'}]}}"
+  },
+  {
+    "image_file": "bill_08.png",
+    "model": "llama-3.3-70b-versatile",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.28746604919433594,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+  },
+  {
+    "image_file": "bill_08.png",
+    "model": "openai/gpt-4o",
+    "extraction": {
+      "vendor_name": "New Bombay Sweets",
+      "invoice_number": "NBS-3344",
+      "date": "2024-12-31",
+      "date_raw": "31/12/2024",
+      "amount": 750.0,
+      "currency": "INR",
+      "gst_details": "GSTIN: 19AABCN2233L1ZE, GST 5%: Rs.37.50",
+      "raw_model_output": "{\n  \"vendor_name\": \"New Bombay Sweets\",\n  \"invoice_number\": \"NBS-3344\",\n  \"date\": \"2024-12-31\",\n  \"date_raw\": \"31/12/2024\",\n  \"amount\": 750.00,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN: 19AABCN2233L1ZE, GST 5%: Rs.37.50\"\n}"
+    },
+    "token_usage": {
+      "input_tokens": 1077,
+      "output_tokens": 98
+    },
+    "latency_seconds": 1.5708887577056885,
+    "parse_success": true,
+    "parse_error": null
+  },
+  {
+    "image_file": "bill_08.png",
+    "model": "pixtral-12b-2409",
+    "extraction": {
+      "vendor_name": "New Bombay Sweets",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "```json\n{\n  \"vendor_name\": \"New Bombay Sweets\",\n  \"invoice_number\": \"NBS-3344\",\n  \"date\": \"2024-12-31\",\n  \"date_raw\": \"31/12/2024\",\n  \"amount\": 750.00,\n  \"currency\": \"INR\",\n  \"gst_details\": {\n    \"GSTIN\": \"19AABCN2233L1ZE\",\n    \"tax_amount\": 37.50,\n    \"tax_rate\": 5\n  }\n}\n```"
+    },
+    "token_usage": {
+      "input_tokens": 991,
+      "output_tokens": 134
+    },
+    "latency_seconds": 2.2587432861328125,
+    "parse_success": false,
+    "parse_error": "Pydantic validation: 1 validation error for BillExtraction\ngst_details\n  Input should be a valid string [type=string_type, input_value={'GSTIN': '19AABCN2233L1Z...t': 37.5, 'tax_rate': 5}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_type"
+  },
+  {
+    "image_file": "bill_09.png",
+    "model": "claude-sonnet-4-20250514",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd816odVfoYcSJLGSANL'}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.6445984840393066,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd816odVfoYcSJLGSANL'}"
+  },
+  {
+    "image_file": "bill_09.png",
+    "model": "gemini-3.6-flash",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 4.615761006s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '4s'}]}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.6327366828918457,
+    "parse_success": false,
+    "parse_error": "API error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 4.615761006s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '4s'}]}}"
+  },
+  {
+    "image_file": "bill_09.png",
+    "model": "llama-3.3-70b-versatile",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.28933024406433105,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+  },
+  {
+    "image_file": "bill_09.png",
+    "model": "openai/gpt-4o",
+    "extraction": {
+      "vendor_name": "Sai Auto Parts",
+      "invoice_number": "SA/2024/789",
+      "date": "2024-06-14",
+      "date_raw": "14-6-2024",
+      "amount": 4320.0,
+      "currency": "INR",
+      "gst_details": "GSTIN: 36AADCS9876Q1ZJ, Total Tax 28%: Rs.1209.60",
+      "raw_model_output": "{\n  \"vendor_name\": \"Sai Auto Parts\",\n  \"invoice_number\": \"SA/2024/789\",\n  \"date\": \"2024-06-14\",\n  \"date_raw\": \"14-6-2024\",\n  \"amount\": 4320.00,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN: 36AADCS9876Q1ZJ, Total Tax 28%: Rs.1209.60\"\n}"
+    },
+    "token_usage": {
+      "input_tokens": 939,
+      "output_tokens": 102
+    },
+    "latency_seconds": 5.013293504714966,
+    "parse_success": true,
+    "parse_error": null
+  },
+  {
+    "image_file": "bill_09.png",
+    "model": "pixtral-12b-2409",
+    "extraction": {
+      "vendor_name": "Sai Auto Parts",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "```json\n{\n  \"vendor_name\": \"Sai Auto Parts\",\n  \"invoice_number\": \"SA/2024/789\",\n  \"date\": \"2024-06-14\",\n  \"date_raw\": \"14-6-2024\",\n  \"amount\": 4320.00,\n  \"currency\": \"INR\",\n  \"gst_details\": {\n    \"GSTIN\": \"36AADCS9876Q1ZJ\",\n    \"tax_amount\": 1209.60,\n    \"tax_rate\": 28\n  }\n}\n```"
+    },
+    "token_usage": {
+      "input_tokens": 991,
+      "output_tokens": 141
+    },
+    "latency_seconds": 2.7062172889709473,
+    "parse_success": false,
+    "parse_error": "Pydantic validation: 1 validation error for BillExtraction\ngst_details\n  Input should be a valid string [type=string_type, input_value={'GSTIN': '36AADCS9876Q1Z... 1209.6, 'tax_rate': 28}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_type"
+  },
+  {
+    "image_file": "bill_10.png",
+    "model": "claude-sonnet-4-20250514",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd82fg6LoNgjcUqG9wrr'}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.6284801959991455,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdd82fg6LoNgjcUqG9wrr'}"
+  },
+  {
+    "image_file": "bill_10.png",
+    "model": "gemini-3.6-flash",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 43.483909764s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '43s'}]}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.49214649200439453,
+    "parse_success": false,
+    "parse_error": "API error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 43.483909764s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '43s'}]}}"
+  },
+  {
+    "image_file": "bill_10.png",
+    "model": "llama-3.3-70b-versatile",
+    "extraction": {
+      "vendor_name": "EXTRACTION_FAILED",
+      "invoice_number": null,
+      "date": null,
+      "date_raw": null,
+      "amount": null,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+    },
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "latency_seconds": 0.4100656509399414,
+    "parse_success": false,
+    "parse_error": "API error: Error code: 400 - {'error': {'message': 'messages[0].content must be a string', 'type': 'invalid_request_error', 'param': 'messages[0].content'}}"
+  },
+  {
+    "image_file": "bill_10.png",
+    "model": "openai/gpt-4o",
+    "extraction": {
+      "vendor_name": "Patel Kirana Store",
+      "invoice_number": "PKS-112",
+      "date": "2024-03-17",
+      "date_raw": "17/03/24",
+      "amount": 567.0,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "```json\n{\n  \"vendor_name\": \"Patel Kirana Store\",\n  \"invoice_number\": \"PKS-112\",\n  \"date\": \"2024-03-17\",\n  \"date_raw\": \"17/03/24\",\n  \"amount\": 567.00,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}\n```"
+    },
+    "token_usage": {
+      "input_tokens": 939,
+      "output_tokens": 78
+    },
+    "latency_seconds": 4.896288871765137,
+    "parse_success": true,
+    "parse_error": null
+  },
+  {
+    "image_file": "bill_10.png",
+    "model": "pixtral-12b-2409",
+    "extraction": {
+      "vendor_name": "Patel Kirana Store",
+      "invoice_number": "PKS-112",
+      "date": null,
+      "date_raw": "1?/03/24",
+      "amount": 567.0,
+      "currency": "INR",
+      "gst_details": null,
+      "raw_model_output": "```json\n{\n  \"vendor_name\": \"Patel Kirana Store\",\n  \"invoice_number\": \"PKS-112\",\n  \"date\": null,\n  \"date_raw\": \"1?/03/24\",\n  \"amount\": 567.00,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}\n```"
+    },
+    "token_usage": {
+      "input_tokens": 991,
+      "output_tokens": 81
+    },
+    "latency_seconds": 2.508493185043335,
+    "parse_success": true,
+    "parse_error": null
+  }
+]
