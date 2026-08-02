@@ -48,7 +48,12 @@ def load_extractors() -> list:
     """Try to initialize each extractor. Skip any whose API key is missing."""
     extractors = []
 
-
+    try:
+        from extractors.gemini_extractor import GeminiExtractor
+        extractors.append(GeminiExtractor())
+        logger.info("[OK] Gemini extractor loaded")
+    except (ValueError, ImportError) as e:
+        logger.warning(f"[SKIP] Gemini extractor skipped: {e}")
 
     try:
         from extractors.nemotron_extractor import NemotronExtractor

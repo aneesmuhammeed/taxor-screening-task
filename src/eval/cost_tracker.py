@@ -11,6 +11,12 @@ are noted so these can be updated when pricing changes.
 # Last updated: 2025-01-15
 
 PRICING = {
+    "gemini-3.6-flash": {
+        "input_per_1m": 0.075,   # $0.075 per 1M input tokens
+        "output_per_1m": 0.30,   # $0.30 per 1M output tokens
+        "source": "https://ai.google.dev/pricing",
+        "date": "2025-01-15",
+    },
 
     "pixtral-12b-2409": {
         "input_per_1m": 0.15,    # $0.15 per 1M input tokens
